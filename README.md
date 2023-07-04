@@ -19,9 +19,29 @@
 
 ## Section 1 Installation and Setup
 
-```
-conda --version
+```bash
+Command: conda --version
+This command will display the version of Conda installed on your system.
+Activate Base Environment:
 
-conda 
+Command: conda activate base
+This command activates the base environment in Conda. The base environment is the default environment that is created when you install Conda.
+Create a New Environment:
+
+Command: conda create --name pandas_playground
+This command creates a new environment named "pandas_playground" in Conda. The environment will be located at /Users/itsyuimoriispace/anaconda3/envs/pandas_playground.
+Activate the New Environment:
+
+Command: conda activate pandas_playground
+This command activates the "pandas_playground" environment. Once activated, any packages installed or commands executed will be specific to this environment.
+Deactivate an Active Environment:
+
+Command: conda deactivate
+This command deactivates the currently active environment. After deactivation, you will return to the base environment or the previously active environment.
+View Available Environments:
+
+Command: conda info --envs
+This command displays a list of all available environments in Conda, along with their respective locations on your system.
+Remember to replace /Users/itsyuimoriispace/anaconda3/envs/pandas_playground with the actual path to the "pandas_playground" environment on your system.
 ```
 
