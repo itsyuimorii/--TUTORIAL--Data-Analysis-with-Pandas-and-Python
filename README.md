@@ -20,28 +20,38 @@
 ## Section 1 Installation and Setup
 
 ```bash
-Command: conda --version
-This command will display the version of Conda installed on your system.
-Activate Base Environment:
+# Display Conda version
+conda --version
 
-Command: conda activate base
-This command activates the base environment in Conda. The base environment is the default environment that is created when you install Conda.
-Create a New Environment:
+# Activate the base environment
+conda activate base
 
-Command: conda create --name pandas_playground
-This command creates a new environment named "pandas_playground" in Conda. The environment will be located at /Users/itsyuimoriispace/anaconda3/envs/pandas_playground.
-Activate the New Environment:
+# Create a new environment named "pandas_playground"
+conda create --name pandas_playground
 
-Command: conda activate pandas_playground
-This command activates the "pandas_playground" environment. Once activated, any packages installed or commands executed will be specific to this environment.
-Deactivate an Active Environment:
+# Activate the "pandas_playground" environment
+conda activate pandas_playground
 
-Command: conda deactivate
-This command deactivates the currently active environment. After deactivation, you will return to the base environment or the previously active environment.
-View Available Environments:
+# Deactivate the currently active environment
+conda deactivate
 
-Command: conda info --envs
-This command displays a list of all available environments in Conda, along with their respective locations on your system.
-Remember to replace /Users/itsyuimoriispace/anaconda3/envs/pandas_playground with the actual path to the "pandas_playground" environment on your system.
+# View available environments
+conda info --envs
+
+# Install Pandas
+conda install pandas
+
+# Install Jupyter, Bottleneck, Numexpr, and Matplotlib
+conda install jupyter bottleneck numexpr matplotlib
+
+# Update conda
+conda update -n base -c defaults conda
+
+# Remove the pandas_playground environment
+conda env remove --name pandas_playground
+```
+
+```bash
+
 ```
 
